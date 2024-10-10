@@ -1,5 +1,11 @@
+@font-face {
+    font-family: Inter;
+    src: url(Projekt/material/Inter.ttf);
+}
+
 body {
     margin: 0;
+    font-family: Inter;
 }
 
 header {
@@ -18,9 +24,10 @@ header {
 .menu-container {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 
     width: 100%;
+    font-size: 13.5px;
 }
 
 .menu-container a {
@@ -28,6 +35,100 @@ header {
     text-decoration: none;
 }
 
+div#left {
+    display: flex;
+    gap: 20px;
+}
+
+div#right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+#line {
+    border-right: 2px solid grey;
+    padding-right: 20px;
+}
+
+#mobile-nav {
+    display: none;
+}
 
 
 
+
+
+a.botton {
+    background-color: black;
+    color: white;
+
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+
+#company {
+    border: 2px 0 solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Main */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+#together {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 50px 0;
+}
+
+#text-together {
+    padding: 30px;
+}
+
+#pic-together {
+    max-width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    header {
+        border-bottom: none;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: contents;
+    }
+}
